@@ -1,0 +1,46 @@
+.container {
+  width: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .getData {
+    margin: 100px 0 0 0;
+
+    .getSelect1{
+      display: flex;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      color: rgb(5, 5, 5);
+      border-radius: 5px;
+      height: 40px;
+
+    }
+
+    .getSelect2{
+      display: flex;
+      border: none;
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+      height: 40px;
+    }
+  }
+
+  .postButtonData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    .postButton{
+      width: 100px;
+      height: 40px;
+      font-size: 17px;
+      border-radius: 7px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

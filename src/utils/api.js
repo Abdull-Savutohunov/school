@@ -1,13 +1,16 @@
-import { instanse } from "./configa"
+import  instance  from "./configs"
 
 
 export const endpoints = {
-  CreateTeacher: (data , userId) => instanse.put(`teacher/${userId}.json`, data),
-  createClass :( data ) => instanse.post(`class.json`, data),
-  getClass : () => instanse.get('class.json'),
-  GetMoreClass: ( id ) => instanse.get(`class/${id}.json`),
-  postStudents : ( id , data ) => instanse.post(`class/${id}/students/.json` , data)
+  // CreateTeacher: (data , userId) => instance.put(`teacher/${userId}.json`, data),
+  heandleCreateClass :( data ) => instance.post(`class.json`, data),
+  getClass : () => instance.get('class.json'),
+  heandleClassMore: ( id ) => instance.get(`class/${id}.json`),
+  postStudents : ( id , data ) => instance.post(`class/${id}/students/.json` , data),
+  deleteToStudent : ( classId , id ) => instance.delete(`class/${classId}/students/${id}.json`),
+  changeStudent :(classId, studentId, data) => instance.patch(`/class/${classId}/students/${studentId}/.json`, data),
 
 
 }
+
 

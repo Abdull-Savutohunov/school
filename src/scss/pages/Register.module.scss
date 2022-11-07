@@ -1,0 +1,26 @@
+.container{
+  width: 1440px;
+  margin: 0 auto;
+
+  .row{
+    margin: 200px auto;
+    width: 280px;
+    height: 100px;
+    background: wheat;
+    .googleIcon{
+      width: 100%;
+      margin: 0 auto;
+      font-size: 50px;
+    }
+
+    .link{
+      padding: 0 20%;
+      text-decoration: none;
+      width: 100%;
+      margin: 0 auto;
+      color: black;
+    }
+
+  }
+
+}
