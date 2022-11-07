@@ -1,10 +1,12 @@
 .container {
-  width: 10px;
+  width: 200px;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  background-color: black;
 
   .getData {
-    margin: 100px 0 0 0;
+    margin-top: 100px;
 
     .getSelect1{
       display: flex;
@@ -14,7 +16,8 @@
       color: rgb(5, 5, 5);
       border-radius: 5px;
       height: 40px;
-
+      width: 100px;
+      margin-bottom: 10px;
     }
 
     .getSelect2{
@@ -25,6 +28,7 @@
       color: rgb(0, 0, 0);
       border-radius: 5px;
       height: 40px;
+      margin-bottom: 10px
     }
   }
 
@@ -32,7 +36,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 
     .postButton{
       width: 100px;
