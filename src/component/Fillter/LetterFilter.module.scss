@@ -1,0 +1,17 @@
+.container{
+  position: fixed;
+  width: 170px;
+  height: 100%;
+  margin: 400px 0 0 50px;
+  .card{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding: 3px;
+    width: 70px;
+
+
+  }
+}

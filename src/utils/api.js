@@ -2,7 +2,6 @@ import  instance  from "./configs"
 
 
 export const endpoints = {
-  // CreateTeacher: (data , userId) => instance.put(`teacher/${userId}.json`, data),
   heandleCreateClass :( data ) => instance.post(`class.json`, data),
   getClass : () => instance.get('class.json'),
   heandleClassMore: ( id ) => instance.get(`class/${id}.json`),

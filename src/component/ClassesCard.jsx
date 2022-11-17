@@ -1,5 +1,5 @@
 import React from 'react';
-import cls from '../scss/components/ClassesCard.module.scss'
+// import cls from '../scss/components/ClassesCard.module.scss'
 import {endpoints} from "../utils/api";
 import {useNavigate} from "react-router-dom";
 
@@ -26,8 +26,16 @@ const ClassesCard = () => {
             // console.log(item);
             return(
               <div onClick={() => navigate(`/class/${item.id}`)} key={index}>
-                <p className={cls.class_number}>{item.numberClasses}</p>
-                <h1 className={cls.class_text}>{item.textClasses}</h1>
+                <p 
+                  className={cls.class_number}
+                >
+                  {/* {item.numberClasses} */}
+                </p>
+                <h1 
+                  // className={cls.class_text}
+                >
+                  {item.textClasses}
+                </h1>
               </div>
             )
           })

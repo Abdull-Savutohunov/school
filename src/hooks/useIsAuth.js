@@ -1,4 +1,9 @@
-import React from "react";
+import {AuthContext} from '../Providers/AuthProvider'
+import {useContext} from "react";
 
 
-// const[ isAuth , setisAuth] = React.useState('')
+const useIsAuth = () => {
+    return useContext(AuthContext)
+}
+
+export default useIsAuth

@@ -8,10 +8,9 @@
     width: 1440px;
     margin: 0 auto;
     display: flex;
-    // justify-content: start;
+    justify-content: start;
     flex-wrap: wrap;
     .card{
-
       border: 1px solid #c73434;
       width: 315px;
       min-height: 400px;

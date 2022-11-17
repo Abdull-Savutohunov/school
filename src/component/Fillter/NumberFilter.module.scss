@@ -1,0 +1,16 @@
+.container{
+  position: fixed;
+  width: 170px;
+  height: 100%;
+  background-color: black;
+  .card{
+    color: white;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin: 5px 50px;
+    padding: 3px;
+  }
+}

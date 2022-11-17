@@ -1,14 +1,36 @@
 import React from 'react'
 import cls from '../scss/pages/Home.module.scss'
-// import ClassesCard from "../component/ClassesCard";
-import AllFilter from "../component/AllFilter";
 import HomeClass from "../component/HomeClass";
+import NumberFilter from "../component/Fillter/NumberFilter";
+import LetterFilter from "../component/Fillter/LetterFilter";
+import {endpoints} from "../utils/api";
+
 const Home = () => {
+  const [rewData , setRewData] = React.useState('')
+  const [rewDataNumber , setRewDataNumber] = React.useState('')
+
+
+  React.useEffect(() => {
+    
+    endpoints.getClass().then(r => {
+      const newData = Object.entries(r.data).map(([id, item]) => {
+        return {
+          id,
+          ...item
+        }
+      })
+      setRewDataNumber(newData)
+      setRewData(newData)
+
+    })
+  }, [])
+
   return (
     <>
       <div className={cls.container}>
-        <HomeClass/>
-        <AllFilter />
+        <NumberFilter numberFilterChange={setRewDataNumber} />
+        <LetterFilter setState={setRewData}/>
+        <HomeClass data={rewData && rewDataNumber}/>
       </div>
     </>
   )

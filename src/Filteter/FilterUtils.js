@@ -1,6 +1,37 @@
 
+export const classLetterFilterList = [
+  {
+    id:1,
+    titleLetter:'все',
+    onClickLetter:'all',
+    valueLetter:'all',
+  },
+  {
+    id:2,
+    titleLetter:'A',
+    onClickLetter:'A',
+    valueLetter:'A',
+  },
+  {
+    id:3,
+    titleLetter:'B',
+    onClickLetter:'B',
+    valueLetter:'B',
+  },
+  {
+    id:4,
+    titleLetter:'C',
+    onClickLetter:'C',
+    valueLetter:'C',
+  },
+  {
+    id:5,
+    titleLetter:'D',
+    onClickLetter:'D',
+    valueLetter:'D',
+  },
 
-
+]
 
 
 export const classNumberFilterList = [

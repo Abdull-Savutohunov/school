@@ -24,21 +24,24 @@ const HomeClassMore = () => {
   return (
     <>
       <div className={cls.container}>
-        {
-          student && student.map((item , index) => (
-            <div key={index} className={cls.card}>
-              <img className={cls.card_img} src={item.url} />
+        <div className={cls.card_container}>
+          {
+            student && student.map((item , index) => (
+              <div key={index} className={cls.card}>
+                <img className={cls.card_img} src={item.url} />
 
-              <div className={cls.text_container}>
-                <h5><b>{item.firstname}</b></h5>
-                <h5><b>{item.lastname}</b></h5>
-                <h5><b>{item.age}</b></h5>
-                <h5><b>{item.class}</b></h5>
-                <h5><b>{item.date}</b></h5>
+                <div className={cls.text_container}>
+                  <h5><b>{item.firstname}</b></h5>
+                  <h5><b>{item.lastname}</b></h5>
+                  <h5><b>{item.age}</b></h5>
+                  <h5><b className={cls.class}>{item.class}</b></h5>
+                  <h5><b>{item.date}</b></h5>
+                </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
+       
       </div>
 
     </>

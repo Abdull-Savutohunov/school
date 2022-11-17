@@ -1,7 +1,41 @@
 .container{
-  width: 100%;
-  height: 100vh;
-  background-color: #c73434;
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
+  // background-color: red;
+  .subContainer{
+    margin:0 0 0 200px; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .addClass{
+      padding: 10px;
+      margin: 15px ;
+      border: 1px solid black;   
+      height: 60px;
+      width: 50px;
+      .class_number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      .class_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+      
+    }
+    
+  }
+
+
+ 
 
 }

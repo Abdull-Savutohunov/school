@@ -1,5 +1,5 @@
 import React from 'react'
-import cls from '../scss/components/CreateCardInput.module.scss'
+import cls from '../scss/components/CreateClassDropDown.module.scss'
 
 const CrateClassCard = ({ onSubmit  , textClasses , setTextClasses , numberClasses , setNumberClasses ,}) => {
 
@@ -31,12 +31,13 @@ const CrateClassCard = ({ onSubmit  , textClasses , setTextClasses , numberClass
               <option >10</option>
               <option >11</option>
             </select>
+            <div className={cls.postButtonData}>
+              <button className={cls.postButton} type='submit'>
+                submit
+              </button>
           </div>
-          <div className={cls.postButtonData}>
-            <button className={cls.postButton} type='submit'>
-              submit
-            </button>
           </div>
+
         </form>
       </div>
     </>

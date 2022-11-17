@@ -1,9 +1,9 @@
 import React from 'react'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { auth } from '../utils/Firebase';
+import { auth } from '../../../utils/Firebase';
 import {TiSocialGooglePlusCircular}  from 'react-icons/ti'
 import { useNavigate, Link } from 'react-router-dom';
-import cls from '../scss/pages/Register.module.scss'
+import cls from '../../../scss/pages/Register.module.scss'
 
 const Register = () => {
   // const []
