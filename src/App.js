@@ -6,7 +6,6 @@ import Admin from './pages/Admin';
 import ClassMore from "./component/ClassMore";
 import HomeClassMore from "./component/HomeClassMore";
 import './App.scss'
-import HomeClass from './component/HomeClass';
 import Auth from "./pages/apps/auth/Auth";
 import PrivateRoutes from "./component/PrivateRoutes";
 
@@ -19,7 +18,6 @@ function App() {
 
       <Route element={<PrivateRoutes/>}>
         <Route path='/' element={<Home/>}/>
-        <Route path='/test' element={<HomeClass/>}/>
         <Route path='/class/:id' element={< ClassMore/>}/>
         <Route path='/home/class/:id' element={< HomeClassMore />}/>
       </Route>

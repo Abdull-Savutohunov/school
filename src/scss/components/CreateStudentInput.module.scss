@@ -1,11 +1,13 @@
 .container{
   width: 1440px;
+  background: #000;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   .form{
     height: 100%;
     width: 250px;
-    background-color: black;
+    background-color: red;
     position: fixed;
     .inputContainer{
       padding: 0 20px;
@@ -23,7 +25,8 @@
     display: flex;
     flex-wrap: wrap;
     .card{
-      border: 1px solid #1c1b1b;
+      background-color: wheat;
+      border: 1px solid wheat;
       width: 200px;
       height: 380px;
       margin:30px 25px 10px 0;

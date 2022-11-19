@@ -29,10 +29,10 @@ const ClassesCard = () => {
                 <p 
                   className={cls.class_number}
                 >
-                  {/* {item.numberClasses} */}
+                  {item.numberClasses}
                 </p>
                 <h1 
-                  // className={cls.class_text}
+                  className={cls.class_text}
                 >
                   {item.textClasses}
                 </h1>

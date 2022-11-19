@@ -1,17 +1,97 @@
-.container{
+.inputContainer{
+  margin: 40px 0;
+  background-color: rgba($color: #000000, $alpha: 0.2);
   position: fixed;
-  width: 170px;
-  height: 100%;
-  margin: 400px 0 0 50px;
+
   .card{
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
-    padding: 3px;
     width: 70px;
-
-
+    height: 40px;
+    border: 1px solid black;
+    color: white;
   }
+
+} 
+
+.cardContainer{
+  margin: 40px 0 0 150px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+
+  .addClass{  
+    margin: 10px;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+
+  
+    .class_number{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .class_text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
 }
+
+
+@media (max-width: 375px) {
+  .inputContainer{
+    margin: 5px 0;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    position: fixed;
+  
+    .card{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 35px;
+      border: 1px solid black;
+      color: white;
+    }
+  
+  } 
+  
+  .cardContainer{
+    margin: 20px 0 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  
+    .addClass{  
+      margin: 10px;
+      border: 1px solid black;
+      width: 200px;
+      height: 100px;
+  
+    
+      .class_number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+      }
+      .class_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+  }
+  
+  
+}
+
